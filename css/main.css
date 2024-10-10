@@ -19,7 +19,8 @@ html {
 }
 
 .nav-link:hover {
-    color: #4a5568; /* Tailwind's gray-700 */
+    color: #D9EAF5;
+    /* Tailwind's gray-700 */
 }
 
 
@@ -42,7 +43,6 @@ html {
 
 /* Button Styling */
 .btn-primary {
-    background-color: #1a202c; /* Tailwind's gray-900 */
     color: #f1f1f1;
     padding: 10px 20px;
     border-radius: 8px;
@@ -51,41 +51,57 @@ html {
 }
 
 .btn-primary:hover {
-    background-color: #2d3748; /* Tailwind's gray-800 */
+    background-color: #111827;
+    /* Tailwind's gray-800 */
 }
-
+.catalogue-btn-primary {
+    background-color: #111827;
+    /* Tailwind's gray-900 */
+    color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.catalogue-btn-primary:hover{
+    background-color: #D9EAF5;
+    color: #1a202c;
+}
 .hidden {
-    display: none; /* Ensure it doesn't take up space */
+    display: none;
+    /* Ensure it doesn't take up space */
 }
 
 
 /*custom animations for floating texts*/
 
-.float-in{
+.float-in {
     opacity: 0;
     transform: translateY(-100%);
     animation: floatIn 3s forwards;
 }
 
-@keyframes floatIn{
-    to{
+@keyframes floatIn {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.float-right{
+.float-right {
     opacity: 0;
     transform: translateX(100%);
     animation: floatRight 3s forwards;
 }
 
-@keyframes floatRight{
-    to{
+@keyframes floatRight {
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
+
+
 
 
 .product-card {
@@ -106,35 +122,39 @@ html {
 }
 
 .category-card img {
-    height: auto; /* Ensure images maintain their aspect ratio */
+    height: auto;
+    /* Ensure images maintain their aspect ratio */
 }
-#catalogue img{
+
+#catalogue img {
     width: 100%;
     height: 400px;
 }
 
 /*fad-in for services*/
 
-#services{
+#services {
     opacity: 0;
     transform: translateX(-20px);
     transition: opacity 1s ease, transform 1s ease;
 }
 
-#services.fade-in{
+#services.fade-in {
     opacity: 1;
     transform: translateX(0);
 }
 
 /* Custom CSS for non-Tailwind-specific styles */
 #appointment {
-    display: none; /* Hides the element by default */
+    display: none;
+    /* Hides the element by default */
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 #appointment.fade-in {
-    display: block; /* Makes the element visible */
+    display: block;
+    /* Makes the element visible */
     opacity: 1;
 }
 
@@ -142,19 +162,40 @@ html {
 
 /* Styling for the Sticky Button */
 #sticky-cta {
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
+    /* For Safari */
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000; /* Ensure it stays on top */
+    z-index: 1000;
+    /* Ensure it stays on top */
     padding: 15px 25px;
-    background-color: #1a202c; /* Tailwind's gray-900 */
     color: white;
     border-radius: 8px;
     transition: background-color 0.3s ease;
     cursor: pointer;
+
 }
 
 #sticky-cta:hover {
-    background-color: #2d3748; /* Tailwind's gray-800 */
+    background-color: #2d3748;
+    /* Tailwind's gray-800 */
+}
+
+/*font classes*/
+
+.logo-text {
+    font-family: "Tangerine", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.sub-head-text {
+    font-family: "Sacramento", serif;
+    font-style: normal;
+}
+.subtle-text-font{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }

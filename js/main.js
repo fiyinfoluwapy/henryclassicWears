@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.remove('open');
         setTimeout(() => {
             mobileMenu.style.display = 'none'; // Hide after transition
-        }, 300); // Match this with CSS transition duration
+        }, 300); 
     });
 
     // Hero Carousel
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
-    }, 5000);
+    }, 3000);
 
     // Show Products Functionality
     const productButtons = document.querySelectorAll('.view-products');
@@ -87,12 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form validation
     const phoneInput = document.getElementById('phone');
     const emailInput = document.getElementById('email');
-    const phoneRegex = /^[0-9]{10}$/;
+    const phoneRegex = /^[0-9]{11}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     phoneInput.addEventListener('input', () => {
         if (!phoneRegex.test(phoneInput.value)) {
-            phoneInput.setCustomValidity('Please enter a valid 10-digit phone number');
+            phoneInput.setCustomValidity('Please enter a valid 11-digit phone number');
         } else {
             phoneInput.setCustomValidity('');
         }
@@ -139,6 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
         testimonials[currentTestimonial].classList.add('opacity-100');
     }
 
-    setInterval(showNextTestimonial, 5000);
+    setInterval(showNextTestimonial, 4000);
     testimonials[0].classList.add('opacity-100');
 });

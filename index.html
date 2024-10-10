@@ -4,49 +4,59 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tailor</title>
+    <title>Henry Classics</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sacramento&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
 
+    <!--Google Icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=styler" />
+
+    <!--tailwind css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Flatpickr CSS -->
+    <!-- Flatpickr CSS for calendar -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
 <body>
     <header class="fixed w-full z-50 bg-white shadow-md">
-        <nav class="flex justify-between items-center py-4 px-6">
-            <div class="text-2xl font-bold">
-                <i class="fas fa-cut"></i> Henry Classics
+        <nav class="flex justify-between items-center py-4 px-6 bg-indigo-950 float-in">
+            <div class="text-3xl font-bold text-yellow-600 logo-text">
+                <span class="material-symbols-outlined text-3xl">
+                    styler
+                </span>Henry Classic Wear
             </div>
-            <div class="hidden md:flex space-x-6">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#catalogue" class="nav-link">Catalogue</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#testimonials" class="nav-link">Testimonials</a>
-                <a href="#appointment" class="nav-link">Appointment</a>
+            <div class="hidden md:flex space-x-6 text-blue-100">
+                <a href="#home" class="nav-link  hover:text-yellow-600">Home</a>
+                <a href="#catalogue" class="nav-link  hover:text-yellow-600">Catalogue</a>
+                <a href="#services" class="nav-link  hover:text-yellow-600">Services</a>
+                <a href="#show-appointment" class="nav-link  hover:text-yellow-600">Book Appointment</a>
+                <a href="#FAQ" class="nav-link  hover:text-yellow-600">FAQ</a>
+                <a href="#testimonials" class="nav-link  hover:text-yellow-600">Testimonies</a>
             </div>
-            <button id="menu-button" class="md:hidden text-3xl" aria-label="Open menu">
+            <button id="menu-button" class="md:hidden text-3xl text-blue-100" aria-label="Open menu">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
-        <div id="mobile-menu" class="hidden fixed right-0 top-0 h-full w-64 bg-white shadow-lg p-6 space-y-6">
-            <button id="close-menu" class="text-xl" aria-label="Close menu">
+        <div id="mobile-menu" class="hidden fixed right-0 top-0 h-full w-64 bg-yellow-600 shadow-lg p-6 space-y-6">
+            <button id="close-menu" class="text-xl text-blue-100" aria-label="Close menu">
                 <i class="fas fa-times"></i>
             </button>
-            <a href="#home" class="block nav-link">Home</a>
-            <a href="#catalogue" class="block nav-link">Catalogue</a>
-            <a href="#services" class="block nav-link">Services</a>
-            <a href="#testimonials" class="block nav-link">Testimonials</a>
-            <a href="#appointment" class="block nav-link">Appointment</a>
+            <a href="#home" class="block nav-link text-indigo-950">Home</a>
+            <a href="#catalogue" class="block nav-link text-indigo-950">Catalogue</a>
+            <a href="#services" class="block nav-link text-indigo-950">Services</a>
+            <a href="#show-appointment" class="block nav-link text-indigo-950">Book Appointment</a>
+            <a href="#FAQ" class="block nav-link text-indigo-950">FAQ</a>
+            <a href="#testimonials" class="block nav-link text-indigo-950">Testimonies</a>
         </div>
     </header>
 
@@ -56,57 +66,80 @@
                 style="background-image: url('https://i.pinimg.com/474x/6d/d4/c3/6dd4c3d39f5372f412d2c7221148a76f.jpg');">
             </div>
             <div class="slide"
-                style="background-image: url('https://i.pinimg.com/564x/8c/78/09/8c7809d06a9fcd512e363de8ddda2622.jpg');">
+                style="background-image: url('https://i.pinimg.com/736x/f0/5d/d6/f05dd6245d1b36fbc8715765186180b1.jpg');">
             </div>
             <div class="slide"
-                style="background-image: url('https://i.pinimg.com/564x/ce/1e/dc/ce1edcd154695df13ea02969c38d16fb.jpg');">
+                style="background-image: url('https://i.pinimg.com/564x/e3/c1/b3/e3c1b3e816c3f930d91f328929d1b1ec.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://i.pinimg.com/736x/c9/57/a2/c957a273ab1cb135637522147e68bdf0.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://i.pinimg.com/564x/dc/aa/0e/dcaa0e49405c075cacdbe09e67a9eddd.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://i.pinimg.com/control/236x/1a/8d/fe/1a8dfe263be978390516fccddd4a84fc.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://i.pinimg.com/control/236x/53/4e/42/534e4226e278ca060956cfd0e90a0ccb.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://i.pinimg.com/control/564x/36/a7/b7/36a7b7e39b0b0e7bf0c101f6ed11657d.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://i.pinimg.com/564x/aa/d7/0a/aad70a64b9c31be48e989b6fcfaea62a.jpg');">
             </div>
         </div>
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white">
-            <h1 class="text-4xl md:text-6xl font-bold">Welcome to Henry Classics</h1>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white float-in">
+            <h1 class="text-4xl md:text-6xl font-bold subtle-text-font">
+                Welcome to <span class="logo-text text-yellow-600">Henry Classic Wear</span>
+            </h1>
+            <p class="text-base md:text-xl text-white font-normal leading-relaxed mt-2 subtle-text-font ">
+                Styling Kings with Precision Since 2019—A Classic Wear That Never Goes Out of Style.
+            </p>
             <div class="mt-6 space-x-4">
-                <a href="#catalogue" class="btn-primary">View Catalogue</a>
-                <button id="book-now" class="btn-secondary">Book Now</button>
+                <a href="#catalogue" class="btn-primary bg-indigo-950">View Catalogue</a>
+                <button id="book-now" class="btn-secondary"> <a href="#show-appointment">Book Now</a></button>
             </div>
         </div>
     </section>
 
     <!-- Product Catalog Section -->
     <section id="catalogue" class="py-12 text-center">
-        <h2 class="text-3xl text-center font-bold mb-6">Our Collections</h2>
+        <h2 class="text-4xl text-center font-bold mb-6 sub-head-text">Our Collections</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             <!-- Agbada Card -->
             <div class="category-card border rounded-lg shadow-lg p-4">
-                <img src="https://i.pinimg.com/236x/37/e2/23/37e223c384f3810b8addea7d24a32d52.jpg" alt="Agbada"
+                <img src="https://i.pinimg.com/564x/49/e4/9d/49e49db42ea95107791316e769c707a1.jpg" alt="Agbada"
                     class="w-full h-auto mb-2 rounded">
                 <h3 class="text-xl font-semibold">Agbada</h3>
-                <button class="view-products btn-primary" data-category="agbada">View Products</button>
+                <button class="view-products catalogue-btn-primary" data-category="agbada">View Products</button>
             </div>
 
             <!-- Shirts Card -->
             <div class="category-card border rounded-lg shadow-lg p-4">
-                <img src="https://i.pinimg.com/control/236x/78/77/bd/7877bdf67868b1a5fa86de0d81181e15.jpg" alt="Shirts"
+                <img src="https://i.pinimg.com/564x/ad/ed/81/aded81836c427863a9892d168f0847b4.jpg" alt="Shirts"
                     class="w-full h-auto mb-2 rounded">
                 <h3 class="text-xl font-semibold">Shirts</h3>
-                <button class="view-products btn-primary" data-category="shirts">View Products</button>
+                <button class="view-products catalogue-btn-primary" data-category="shirts">View Products</button>
             </div>
 
             <!-- Trousers Card -->
             <div class="category-card border rounded-lg shadow-lg p-4">
-                <img src="https://i.pinimg.com/736x/be/b1/77/beb1771b178c12e455123563b7d274c0.jpg" alt="Trousers"
+                <img src="https://i.pinimg.com/564x/6f/fa/41/6ffa4138247735aa4419abd4a7a4774d.jpg" alt="Trousers"
                     class="w-full h-auto mb-2 rounded">
                 <h3 class="text-xl font-semibold">Trousers</h3>
-                <button class="view-products btn-primary" data-category="trousers">View Products</button>
+                <button class="view-products catalogue-btn-primary" data-category="trousers">View Products</button>
             </div>
 
             <!-- Complete Outfits Card -->
             <div class="category-card border rounded-lg shadow-lg p-4">
-                <img src="https://i.pinimg.com/control/236x/34/c4/45/34c445d1dd71cb2d0a7505ce06f546ce.jpg"
+                <img src="https://i.pinimg.com/564x/c3/f4/18/c3f418c08183383d5b8584f1dedf7706.jpg"
                     alt="Complete Outfits" class="w-full h-auto mb-2 rounded">
                 <h3 class="text-xl font-semibold">Complete Outfits</h3>
-                <button class="view-products btn-primary" data-category="outfits">View Products</button>
+                <button class="view-products catalogue-btn-primary" data-category="outfits">View Products</button>
             </div>
 
         </div>
@@ -117,18 +150,42 @@
                 <h4 class="text-xl font-semibold mb-2">Agbada Styles</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <div class="product-card p-4 border rounded shadow">
-                        <img src="https://i.pinimg.com/236x/87/57/6e/87576e8fbf32707c60e25657eac6545b.jpg"
-                            alt="Agbada Style 1" class="w-full h-auto mb-2 rounded">
-                        <h5 class="font-semibold">Agbada Style 1</h5>
-                        <p>Price: $XX.XX</p>
+                        <img src="https://i.pinimg.com/564x/e3/c1/b3/e3c1b3e816c3f930d91f328929d1b1ec.jpg"
+                            alt="Monogram Design Agbada Style 1" class="w-full h-auto mb-2 rounded">
+                        <h5 class="font-semibold"> Monogram Design Agbada Style 1</h5>
+                        <p>Price: &#8358; 50,000.00</p>
                     </div>
                     <div class="product-card p-4 border rounded shadow">
-                        <img src="https://i.pinimg.com/236x/87/57/6e/87576e8fbf32707c60e25657eac6545b.jpg"
+                        <img src="https://i.pinimg.com/564x/22/24/c7/2224c728a52da3c15708c8829f88fe89.jpg"
                             alt="Agbada Style 2" class="w-full h-auto mb-2 rounded">
-                        <h5 class="font-semibold">Agbada Style 2</h5>
-                        <p>Price: $XX.XX</p>
+                        <h5 class="font-semibold">Monogram Design Agbada Style 2</h5>
+                        <p>Price: &#8358; 50,000.00</p>
                     </div>
-                    <!-- Add more Agbada styles as needed -->
+
+                    <div class="product-card p-4 border rounded shadow">
+                        <img src="https://i.pinimg.com/564x/39/d0/3f/39d03fa37bb17098d966e601f9799d02.jpg"
+                            alt="Agbada Style 3" class="w-full h-auto mb-2 rounded">
+                        <h5 class="font-semibold">Monogram Design Agbada Style 3</h5>
+                        <p>Price: &#8358; 50,000.00</p>
+                    </div>
+                    <div class="product-card p-4 border rounded shadow">
+                        <img src="https://i.pinimg.com/564x/f0/87/67/f08767764902c7a609e00152e1f7737b.jpg"
+                            alt="Agbada Style 4" class="w-full h-auto mb-2 rounded">
+                        <h5 class="font-semibold">Embroidery Design Agbada Style 4</h5>
+                        <p>Price: &#8358; 50,000.00</p>
+                    </div>
+                    <div class="product-card p-4 border rounded shadow">
+                        <img src="https://i.pinimg.com/564x/8d/aa/b4/8daab4c8c467b55020a881d0b70e43f6.jpg"
+                            alt="Agbada Style 2" class="w-full h-auto mb-2 rounded">
+                        <h5 class="font-semibold">Embroidery Design Agbada Style 5</h5>
+                        <p>Price: &#8358; 50,000.00</p>
+                    </div>
+                    <div class="product-card p-4 border rounded shadow">
+                        <img src="https://i.pinimg.com/564x/5d/10/c3/5d10c389e41224c47ce179cecd546b10.jpg"
+                            alt="Agbada Style 6" class="w-full h-auto mb-2 rounded">
+                        <h5 class="font-semibold">Monogram x Embroidery Design Agbada Style 6</h5>
+                        <p>Price: &#8358; 60,000.00</p>
+                    </div>
                 </div>
             </div>
 
@@ -137,18 +194,24 @@
                 <h4 class="text-xl font-semibold mb-2">Shirt Styles</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <div class="product-card p-4 border rounded shadow">
-                        <img src="https://i.pinimg.com/564x/4f/a2/4d/4fa24d1c1aad8a6747361b7efce63308.jpg"
+                        <img src="https://i.pinimg.com/control/564x/8c/15/29/8c1529c5b94010bb2d68b3a45caeaff7.jpg"
                             alt="Shirt Style 1" class="w-full h-auto mb-2 rounded">
-                        <h5 class="font-semibold">Shirt Style 1</h5>
-                        <p>Price: $XX.XX</p>
+                        <h5 class="font-semibold">Regular Fit Long sleeve Shirt Style 1</h5>
+                        <p>Price: &#8358; 12,000.00</p>
                     </div>
                     <div class="product-card p-4 border rounded shadow">
-                        <img src="https://i.pinimg.com/564x/4f/a2/4d/4fa24d1c1aad8a6747361b7efce63308.jpg"
+                        <img src="https://i.pinimg.com/564x/aa/cf/7c/aacf7ceb45849cbb2314069cfe0945ed.jpg"
                             alt="Shirt Style 2" class="w-full h-auto mb-2 rounded">
-                        <h5 class="font-semibold">Shirt Style 2</h5>
-                        <p>Price: $XX.XX</p>
+                        <h5 class="font-semibold">Plain & Floral Patterned short sleeve Shirt Style 2</h5>
+                        <p>Price: &#8358; 12,000.00</p>
                     </div>
-                    <!-- Add more Shirt styles as needed -->
+                    <div class="product-card p-4 border rounded shadow">
+                        <img src="https://i.pinimg.com/236x/02/71/6a/02716ab80fc7282267165745bdddde13.jpg"
+                            alt="Shirt Style 3" class="w-full h-auto mb-2 rounded">
+                        <h5 class="font-semibold">Vintage Print short sleeve Shirt Style 3</h5>
+                        <p>Price: &#8358; 12,000.00</p>
+                    </div>
+
                 </div>
             </div>
 
@@ -157,16 +220,22 @@
                 <h4 class="text-xl font-semibold mb-2">Trousers Styles</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <div class="product-card p-4 border rounded shadow">
-                        <img src="https://i.pinimg.com/236x/53/03/21/530321d6b371f63aa4ef4c0ae0c52c46.jpg"
+                        <img src="https://i.pinimg.com/564x/06/98/3e/06983e7c95f9bf2fc8ab051cf13f7a21.jpg"
                             alt="Trousers Style 1" class="w-full h-auto mb-2 rounded">
-                        <h5 class="font-semibold">Trousers Style 1</h5>
-                        <p>Price: $XX.XX</p>
+                        <h5 class="font-semibold">Office Belt Patterned Trousers Style 1</h5>
+                        <p>Price: &#8358; 20,000.00</p>
                     </div>
                     <div class="product-card p-4 border rounded shadow">
-                        <img src="https://i.pinimg.com/236x/53/03/21/530321d6b371f63aa4ef4c0ae0c52c46.jpg"
+                        <img src="https://i.pinimg.com/564x/a0/14/c9/a014c9a5373e5c173233b574fa7b4a3f.jpg"
                             alt="Trousers Style 2" class="w-full h-auto mb-2 rounded">
-                        <h5 class="font-semibold">Trousers Style 2</h5>
-                        <p>Price: $XX.XX</p>
+                        <h5 class="font-semibold">Office Trousers Style 2</h5>
+                        <p>Price: &#8358; 16,000.00</p>
+                    </div>
+                    <div class="product-card p-4 border rounded shadow">
+                        <img src="https://i.pinimg.com/564x/a5/b6/01/a5b6012557349f89e980e6fbb514462f.jpg"
+                            alt="Trousers Style 3" class="w-full h-auto mb-2 rounded">
+                        <h5 class="font-semibold">Adjustable Office Trousers Style 3</h5>
+                        <p>Price: &#8358; 16,000.00</p>
                     </div>
                     <!-- Add more Trousers styles as needed -->
                 </div>
@@ -177,18 +246,30 @@
                 <h4 class="text-xl font-semibold mb-2">Complete Outfit Styles</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <div class="product-card p-4 border rounded shadow">
-                        <img src="https://i.pinimg.com/236x/31/eb/45/31eb45f0dd3fd99bd33995801a046439.jpg"
+                        <img src="https://i.pinimg.com/564x/fa/2e/4b/fa2e4baf1c0b82e72107300f830d112e.jpg"
                             alt="Outfit Style 1" class="w-full h-auto mb-2 rounded">
-                        <h5 class="font-semibold">Outfit Style 1</h5>
-                        <p>Price: $XX.XX</p>
+                        <h5 class="font-semibold">Patterned Two Piece Outfit Style 1</h5>
+                        <p>Price: &#8358; 22,000.00</p>
                     </div>
                     <div class="product-card p-4 border rounded shadow">
-                        <img src="https://i.pinimg.com/control/236x/12/26/1e/12261e499ab90522b56c1b8e6be36342.jpg"
+                        <img src="https://i.pinimg.com/564x/23/d0/48/23d048bb4ba9efefebe9dccb8285b1f7.jpg"
                             alt="Outfit Style 2" class="w-full h-auto mb-2 rounded">
-                        <h5 class="font-semibold">Outfit Style 2</h5>
-                        <p>Price: $XX.XX</p>
+                        <h5 class="font-semibold">Patterned Two Piece Outfit Style 2</h5>
+                        <p>Price: &#8358; 25,000.00</p>
                     </div>
-                    <!-- Add more Outfit styles as needed -->
+                    <div class="product-card p-4 border rounded shadow">
+                        <img src="https://i.pinimg.com/236x/9e/99/db/9e99dbb681c399e469aa9aa8c70c8cfb.jpg"
+                            alt="Outfit Style 3" class="w-full h-auto mb-2 rounded">
+                        <h5 class="font-semibold">Summer Floral Patterned short Two Piece Outfit Style 3</h5>
+                        <p>Price: &#8358; 20,000.00</p>
+                    </div>
+                    <div class="product-card p-4 border rounded shadow">
+                        <img src="https://i.pinimg.com/564x/f1/6c/13/f16c139d5eb3163ef1ced3989d17f412.jpg"
+                            alt="Outfit Style 4" class="w-full h-auto mb-2 rounded">
+                        <h5 class="font-semibold">Plain & Patterned Two Piece Outfit Style 4</h5>
+                        <p>Price: &#8358; 25,000.00</p>
+                    </div>
+
                 </div>
             </div>
 
@@ -200,20 +281,35 @@
             <h2 class="text-3xl font-bold text-gray-800 mb-8">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white shadow-lg rounded-lg p-6">
-                    <i class="fas fa-scissors fa-3x text-blue-900 mb-4"></i>
+                    <div class="flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                            fill="#CE9B01">
+                            <path
+                                d="M782-114 481-415 364-298q11 17 13.5 33t2.5 35q0 64-43 107T230-80q-64 0-107-43T80-230q0-64 43-107t107-43q18 0 35.5 5t36.5 15l116-116-118-118q-17 8-34.5 11t-35.5 3q-64 0-107-43T80-730q0-64 43-107t107-43q64 0 107 43t43 107q0 19-2.5 36T367-662l514 514v34h-99ZM599-527l-66-66 249-249h99v33L599-527ZM230-640q38 0 64-26t26-64q0-38-26-64t-64-26q-38 0-64 26t-26 64q0 38 26 64t64 26Zm253 183q8 0 13.5-5.5T502-476q0-8-5.5-13.5T483-495q-8 0-13.5 5.5T464-476q0 8 5.5 13.5T483-457ZM230-140q38 0 64-26t26-64q0-38-26-64t-64-26q-38 0-64 26t-26 64q0 38 26 64t64 26Z" />
+                        </svg>
+                    </div>
                     <h3 class="text-lg font-bold mb-2">Custom Tailoring</h3>
                     <p class="mt-2 text-gray-700">We design custom Agbadas, Native Wears, shirts, jumpsuits, and shirts
                         tailored exclusively to fit you.</p>
                 </div>
 
                 <div class="bg-white shadow-lg rounded-lg p-6">
-                    <i class="fas fa-shirt fa-3x text-blue-900 mb-4"></i>
+                    <div class="flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                            fill="#CE9B01">
+                            <path
+                                d="M165-480 45-688l264-152h51q16 45 45 82.5t75 37.5q47 0 76-37.5t44-82.5h51l263 153-119 207-75-41v216l-60 51v-369l113 62 59-104-188-110q-26 53-70 84t-94 31q-49 0-93.5-31T316-775L127-665l61 104 112-62v225q-15 2-30.5 6.5T240-380v-141l-75 41Zm22 291-39-46 79-67q23-19 51-29t57-10q29 0 56.5 10t50.5 29l116 99q14 12 31.5 17.5T626-180q18 0 36-5.5t32-17.5l79-69 39 47-79 67q-23 19-50.5 28.5T626-120q-29 0-57-9.5T518-158l-115-99q-14-12-32-17.5t-36-5.5q-19 0-36.5 5.5T267-257l-80 68Zm293-471Z" />
+                        </svg>
+                    </div>
                     <h3 class="text-lg font-bold mb-2">Ready to Wear</h3>
                     <p class="mt-2 text-gray-700">We offer high-quality ready-to-wear garments in various styles.</p>
                 </div>
 
                 <div class="bg-white shadow-lg rounded-lg p-6">
-                    <i class="fas fa-hand-holding fa-3x text-blue-900 mb-4"></i>
+
+                  <div class="flex justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#CE9B01"><path d="m250-569-63 35q-14 8-29.5 4.5T136-546L67-665q-8-14-4.5-24T79-707l228-133h64q11 0 17.5 6.5T395-816v15q0 38 24 62t62 24q38 0 61.5-24t23.5-62v-15q0-11 6.5-17.5T590-840h64l228 133q13 8 16 18t-4 24l-70 119q-6 13-25 17t-30-3l-62-39v412q0 16-12 27.5T667-120H289q-16 0-27.5-11.5T250-159v-410Zm60-102v491h337v-491l138 77 45-78-187-107h-18q-8 54-47.5 89T481-655q-57 0-97-35t-48-89h-18L131-672l45 78 134-77Zm171 191Z"/></svg>
+                  </div>
                     <h3 class="text-lg font-bold mb-2">Seamless Alterations</h3>
                     <p class="mt-2 text-gray-700">Need adjustments? We offer profressional alterations for your clothes.
                     </p>
@@ -285,58 +381,118 @@
         </div>
     </section>
 
-    <div class="faq-section mx-auto p-4 max-w-4xl">
-        <div class="faq-item border-b border-gray-200 py-4">
-            <h3 class="faq-title text-lg font-semibold cursor-pointer flex justify-between items-center">
-                What is your return policy?
-                <span class="faq-toggle-icon">+</span>
-            </h3>
-            <div class="faq-content hidden mt-2 text-gray-600">
-                <p>We offer a 30-day return policy with a full refund.</p>
+    <section id="FAQ">
+        <div class="faq-section mx-auto p-4 max-w-4xl">
+            <div class="faq-item border-b border-gray-200 py-4">
+                <h3 class="faq-title text-lg font-semibold cursor-pointer flex justify-between items-center">
+                    What do you need to design an outfit
+                    <span class="faq-toggle-icon">+</span>
+                </h3>
+                <div class="faq-content hidden mt-2 text-gray-600">
+                    <p>Your accurate measurement, style inspo, details of what you want; we are good to sew.</p>
+                </div>
+            </div>
+
+            <div class="faq-item border-b border-gray-200 py-4">
+                <h3 class="faq-title text-lg font-semibold cursor-pointer flex justify-between items-center">
+                    Do you ship internationally?
+                    <span class="faq-toggle-icon">+</span>
+                </h3>
+                <div class="faq-content hidden mt-2 text-gray-600">
+                    <p>Yes, we ship to most countries worldwide.</p>
+                </div>
+            </div>
+
+            <div class="faq-item border-b border-gray-200 py-4">
+                <h3 class="faq-title text-lg font-semibold cursor-pointer flex justify-between items-center">
+                    How long does it take to design & ship an outfit?
+                    <span class="faq-toggle-icon">+</span>
+                </h3>
+                <div class="faq-content hidden mt-2 text-gray-600">
+                    <p>Maximum of two weeks</p>
+                </div>
+            </div>
+            <div class="faq-item border-b border-gray-200 py-4">
+                <h3 class="faq-title text-lg font-semibold cursor-pointer flex justify-between items-center">
+                    Do you make corporate wears?
+                    <span class="faq-toggle-icon">+</span>
+                </h3>
+                <div class="faq-content hidden mt-2 text-gray-600">
+                    <p>Yes we do. You imagine it, and we make it a wearable!</p>
+                </div>
+            </div>
+            <div class="faq-item border-b border-gray-200 py-4">
+                <h3 class="faq-title text-lg font-semibold cursor-pointer flex justify-between items-center">
+                    Do you make group outfits?
+                    <span class="faq-toggle-icon">+</span>
+                </h3>
+                <div class="faq-content hidden mt-2 text-gray-600">
+                    <p>Yes, for various kinds of events, birthday, weddings, anniversary. You name it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="testimonial-carousel relative mx-auto max-w-4xl h-64 overflow-hidden" id="#testimonials">
+            <div
+                class="testimonial-slide absolute w-full p-6 text-center text-gray-600 opacity-0 transition-opacity duration-700 ease-in-out">
+                <p class="text-lg italic">"Henry Classics made the perfect outfit for my wedding!"</p>
+                <span class="block mt-4 text-sm text-gray-500">- Mr Adebayo</span>
+            </div>
+            <div
+                class="testimonial-slide absolute w-full p-6 text-center text-gray-600 opacity-0 transition-opacity duration-700 ease-in-out">
+                <p class="text-lg italic">"Amazing quality and attention to detail, highly recommend!"</p>
+                <span class="block mt-4 text-sm text-gray-500">- Temidire</span>
+            </div>
+            <div
+                class="testimonial-slide absolute w-full p-6 text-center text-gray-600 opacity-0 transition-opacity duration-700 ease-in-out">
+                <p class="text-lg italic">"Best tailoring service I’ve ever used!"</p>
+                <span class="block mt-4 text-sm text-gray-500">- Holy Messenger (MC)</span>
+            </div>
+            <div
+                class="testimonial-slide absolute w-full p-6 text-center text-gray-600 opacity-0 transition-opacity duration-700 ease-in-out">
+                <p class="text-lg italic">"Swift delivery and good customer service"</p>
+                <span class="block mt-4 text-sm text-gray-500">- Mrs Udeh (JP)</span>
+            </div>
+            <div
+                class="testimonial-slide absolute w-full p-6 text-center text-gray-600 opacity-0 transition-opacity duration-700 ease-in-out">
+                <p class="text-lg italic">"World class craftsmanship !"</p>
+                <span class="block mt-4 text-sm text-gray-500">- Elias Daniel</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-indigo-950 float-in">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <!--social media icons-->
+            <div class="mb-4">
+                <a href="#" class="mx-2 text-white hover:text-yellow-600">
+                    <i class="fab fa-whatsapp fa-lg"></i>
+                </a>
+                <a href="#" class="mx-2 text-white hover:text-yellow-600">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="#" class="mx-2 text-white hover:text-yellow-600">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+            </div>
+            <!-- Copyright Notice -->
+            <div class="text-sm text-white">
+                <div class="text-3xl font-bold text-yellow-600 logo-text">
+                    <span class="material-symbols-outlined text-3xl">
+                        styler
+                    </span>Henry Classic Wear
+                </div>
+                &copy; 2024. All rights reserved.
             </div>
         </div>
 
-        <div class="faq-item border-b border-gray-200 py-4">
-            <h3 class="faq-title text-lg font-semibold cursor-pointer flex justify-between items-center">
-                Do you ship internationally?
-                <span class="faq-toggle-icon">+</span>
-            </h3>
-            <div class="faq-content hidden mt-2 text-gray-600">
-                <p>Yes, we ship to most countries worldwide.</p>
-            </div>
-        </div>
-
-        <div class="faq-item border-b border-gray-200 py-4">
-            <h3 class="faq-title text-lg font-semibold cursor-pointer flex justify-between items-center">
-                How can I track my order?
-                <span class="faq-toggle-icon">+</span>
-            </h3>
-            <div class="faq-content hidden mt-2 text-gray-600">
-                <p>You will receive an email with tracking information once your order is shipped.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="testimonial-carousel relative mx-auto max-w-4xl h-64 overflow-hidden">
-        <div class="testimonial-slide absolute w-full p-6 text-center text-gray-600 opacity-0 transition-opacity duration-700 ease-in-out">
-            <p class="text-lg italic">"Henry Classics made the perfect outfit for my wedding!"</p>
-            <span class="block mt-4 text-sm text-gray-500">- John Doe</span>
-        </div>
-        <div class="testimonial-slide absolute w-full p-6 text-center text-gray-600 opacity-0 transition-opacity duration-700 ease-in-out">
-            <p class="text-lg italic">"Amazing quality and attention to detail, highly recommend!"</p>
-            <span class="block mt-4 text-sm text-gray-500">- Sarah Smith</span>
-        </div>
-        <div class="testimonial-slide absolute w-full p-6 text-center text-gray-600 opacity-0 transition-opacity duration-700 ease-in-out">
-            <p class="text-lg italic">"Best tailoring service I’ve ever used!"</p>
-            <span class="block mt-4 text-sm text-gray-500">- Michael Brown</span>
-        </div>
-    </div>
-    
-    
+    </footer>
 
     <!-- Sticky "Check catalogue" Button -->
-    <button id="sticky-cta" class="btn-primary">
-        <a href="#catalogue">Check Catalogue</a>
+    <button id="sticky-cta" class="btn-primary bg-yellow-600">
+        <a href="#catalogue">View Catalogue</a>
     </button>
 
 
